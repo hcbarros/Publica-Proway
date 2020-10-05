@@ -1,9 +1,19 @@
+import { Jogo } from './../app/jogo/jogo-classe/jogo';
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
+/* A VARIÁVEL "lista" É UM ARRAY DO TIPO "Jogo" QUE SERÁ UTILIZADA NO
+ PROJETO PARA FACILITAR A MANIPULAÇÃO E USO DOS DADOS. A VARIÁVEL
+ INÍCIO SERVIRÁ DE APOIO PARA INICIALIZAR A LISTA COM DADOS INICIAIS */
+
+const l: Jogo[] = [];
+
 export const environment = {
-  production: false
+  production: false,
+  lista: l,
+  inicio: false
 };
 
 /*

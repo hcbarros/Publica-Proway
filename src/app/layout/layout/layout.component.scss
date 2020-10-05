@@ -1,0 +1,53 @@
+
+// A LINHA ABAIXO DEFINE UM COR DE FUNDO E UMA BORDA PARA A BARRA SUPERIOR
+.navRow {
+  background-color: #475484;
+  border: solid 1px white;
+  border-left: solid 2px #475484;
+}
+
+
+// A LINHA ABAIXO DEFINE UMA COR E TAMANHO DO TÍTULO NA BARRA SUPERIOR
+.navTitle {
+  color: white;
+  font-size: 3vw;
+}
+
+
+// A LINHA ABAIXO DEFINE UM GRADIENTE DE CORES, TAMANHO E TIPO DE LETRA CONTIDOS NO CORPO DO LAYOUT
+.main {
+  background-image: linear-gradient(to right,white, #1e90ff , #1e90ff);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.54vw;
+}
+
+
+// A LINHA ABAIXO DEFINE UMA PEQUENA NAS TELAS QUE SERÃO INSERIDAS NA TAG ng-contenT
+.content {
+  opacity: 0.8;
+}
+
+
+// A LINHA ABAIXO DEFINE O TAMANHO E POSIÇÃO DA IMAGEM
+img {
+  height: 65%;
+  width: 11vw;
+  margin-top: 9%;
+}
+
+
+// A LINHA ABAIXO DEFINE AS CORES DAS BORDAS DO CORPO DO LAYOUT
+.layoutBody {
+  border-left: solid 2px #475484;
+  border-bottom: solid 2px #475484;
+  border-right: solid 2px #475484;
+}
+
+
+/* A LINHA ABAIXO CORRIGE UMA PEQUENA FALHA, QUASE
+IMPERCEPTÍVEL, NA BORDA ENTRE O CORPO E A BARRA SUPERIOR */
+.separator {
+  border-left: solid 2px #475484;
+  height: 20px;
+  width: 100%;
+}

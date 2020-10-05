@@ -1,0 +1,28 @@
+
+<!-- TELA DE LAYOUT QUE VAI RECEBER AS TELAS COM A TABELA DE
+   JOGOS E CAMPO DE INPUT POR MEIO DA TAG "ng-content" -->
+
+<div class="container main">
+
+    <div class="row navRow">
+        <div class="col-lg-12">
+            <!-- head -->
+            <ul class="nav">
+                <li fxLayout="row wrap" fxLayoutGap="10.8vw" fxLayoutAlign="flex-start">
+                  <a href="https://publica.proway.com.br/home/"><img src="../../assets/proway-logo.png"></a>
+                  <a class="nav-link disabled navTitle" href="#" tabindex="-1" aria-disabled="true">Sistema de pontuação</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row separator"></div>
+
+    <div class="row layoutBody">
+
+        <div class="col-12 content">
+            <ng-content></ng-content>
+        </div>
+    </div>
+
+</div>

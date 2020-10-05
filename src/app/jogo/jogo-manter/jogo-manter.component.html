@@ -1,0 +1,33 @@
+  <app-layout>
+
+    <!-- TELA COM CAMPO INPUT PARA INCLUIR OU ALTERAR ALGUM JOGO CONTIDO NA VARIÁVEL
+         DE AMBIENTE "lista" -->
+    <div class="card main">
+        <div class="card-body">
+
+          <!-- ABAIXO ENCONTRA-SE O CAMPO INPUT QUE RECEBERÁ UM NÚMERO INTEIRO POSITIVO ABAIXO DE 1000.
+               O TÍTULO DO CARD PODE SER "Jogo - Incluir" OU "Jogo - Alterar", A DEPENDER DO VALOR DA
+               VARIAVEL "operacao"  -->
+
+          <h3 class="card-title">Jogo - {{operacao}}</h3>
+          <div class="row">
+              <div class="form-group col-lg-6">
+                <label for="placar"class="control-label">Placar:</label>
+                <input type="text" class="form-control" (keyup)="mascara()" (keydown)="mascara()"  [(ngModel)]="placar" />
+              </div>
+          </div>
+
+
+          <!-- ABAIXO ENCONTRAM-SE 03 BOTÕES, DOS QUAIS APENAS 02 SERAO EXIBIDOS, A DEPENDER DO VALOR DA
+               VARIAVEL "operacao" -->
+          <div class="row">
+            <div class="col-lg-12">
+              <button *ngIf="operacao == 'Incluir'" id="incluir" type="button" class="btn btn-primary" (click)="incluir()">Incluir</button>
+              <button *ngIf="operacao != 'Incluir'" id="alterar" type="button" class="btn btn-primary buttons" (click)="alterar()">Alterar</button>
+              <button type="button" class="btn btn-primary buttons" (click)="voltar()">Voltar</button>
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </app-layout>
