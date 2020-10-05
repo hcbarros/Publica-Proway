@@ -1,6 +1,8 @@
 
 Primeiramente instale as dependencias do node-modules com: npm install
+
 Para testar: ng test
+
 Para executar: ng serve (acesso por http://localhost:4200/)
 
 
